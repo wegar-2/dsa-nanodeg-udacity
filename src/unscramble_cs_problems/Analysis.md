@@ -47,7 +47,8 @@ Note: set update is $O(1)$ due to set being a hash map.
 
 **C.2. Big O Notation**: $O(m+n)$
 
-**C.3. Justification**: since $m + n$ entries have to be processed, 
+**C.3. Justification**: since $m + n$ entries have to be processed, and every entry takes $O(1)$
+time to process (due to above-mentioned properties of the Python's `dict`), the final time complexity is $O(m+n)$
 
 ## Task2
 #### A. Description:
