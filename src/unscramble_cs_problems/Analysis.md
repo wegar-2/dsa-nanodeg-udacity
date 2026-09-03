@@ -33,13 +33,21 @@ to produce the message that is subsequently printed.
 
 ## Task1
 #### A. Description:
+In this problem it's required to find all the distinct telephone numbers
+in the datasets `texts.csv` and `calls.csv`
 
-#### B. Approach:
+#### B. Approach: 
+Iterate through all the entries in the datasets.
+Keep a set in which the unique telephone numbers are stored.
+When processing each entry: update the set.
+Note: set update is $O(1)$ due to set being a hash map.
 
 #### C. Complexity Analysis:
-**C.1. Algorithm**:
-**C.2. Big O Notation**:
-**C.3. Justification**:
+**C.1. Algorithm**: iteration over $m + n$ entries in both data sets.
+
+**C.2. Big O Notation**: $O(m+n)$
+
+**C.3. Justification**: since $m + n$ entries have to be processed, 
 
 ## Task2
 #### A. Description:
