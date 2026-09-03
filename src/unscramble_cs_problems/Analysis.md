@@ -52,13 +52,26 @@ time to process (due to above-mentioned properties of the Python's `dict`), the 
 
 ## Task2
 #### A. Description:
+The number that spent most time on the phone is to be found.
 
-#### B. Approach:
+#### B. Approach: 
+Iterate over the calls entries. Keep a separate dict that stores
+the time spend on phone by the numbers in the dataset.
+For each entry update the value stored in the dict (or add entry for 
+the number if it's not yet in the dict).
+Then, find maximum time in the values of the dict and retrieve the 
+corresponding phone number (key of the dict).
 
 #### C. Complexity Analysis:
-**C.1. Algorithm**:
-**C.2. Big O Notation**:
-**C.3. Justification**:
+**C.1. Algorithm**: 
+It is necessary to iterate over all $n$ rows at least once.
+Then, in the worst case, one hast to again iterate over $2n$ entries twice
+(first searching for the max, secondly retrieving maximum's key).
+**C.2. Big O Notation**: $O(n)$
+**C.3. Justification**: just the complexity stemming from summation 
+of the complexities of the calls list iteration and retrieval of the 
+longest phone time and corresponding phone extraction: 
+$O(n) + O(2n) + O(2n)$
 
 ## Task3
 #### A. Description:
